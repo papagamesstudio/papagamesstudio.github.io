@@ -1,6 +1,5 @@
 OWNERDOMAIN=papagamesstudio.com
-# Add LevelPlay Publisher ID from Account > API, then uncomment:
-# ironsrc.com, YOUR_LEVELPLAY_PUBLISHER_ID, DIRECT
+ironsrc.com, 670395, DIRECT
 media.net, 8CUH2L333, RESELLER
 sharethrough.com, 3817, RESELLER, d53b998a7bd4ecd2
 playdigo.com, 1956, RESELLER
