@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meadowmark | Papa Games Studio</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f7f8fc;
+      color: #2d2d2d;
+      line-height: 1.75;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      color: #fff;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+
+    header .studio {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a0b4d0;
+      margin-bottom: 8px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin: 0 0 10px;
+      letter-spacing: -0.5px;
+    }
+
+    header .subtitle {
+      font-size: 0.95rem;
+      color: #a0b4d0;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, #e8f0fe 0%, #f0f7ff 100%);
+      border: 1px solid #c5d8f8;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 36px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .contact-card .icon-wrap {
+      font-size: 2.4rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .contact-card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 6px;
+    }
+
+    .contact-card p {
+      margin: 0;
+      font-size: 0.93rem;
+      color: #444;
+    }
+
+    .contact-card a {
+      color: #1a73e8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
+    .toc {
+      background: #fff;
+      border: 1px solid #e4e8f0;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+
+    .toc h3 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin: 0 0 14px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .toc li { margin: 6px 0; }
+
+    .toc a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 0.93rem;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    section {
+      background: #fff;
+      border: 1px solid #e4e8f0;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 20px 0 8px;
+    }
+
+    h3:first-of-type { margin-top: 0; }
+
+    p { margin: 0 0 14px; }
+
+    ul, ol { padding-left: 22px; margin: 0 0 14px; }
+
+    li { margin: 6px 0; }
+
+    strong { color: #1a1a2e; }
+
+    .highlight-box {
+      background: #f0f7ff;
+      border-left: 4px solid #1a73e8;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.93rem;
+    }
+
+    .success-box {
+      background: #f0faf4;
+      border-left: 4px solid #34a853;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.93rem;
+    }
+
+    a { color: #1a73e8; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      section { padding: 24px 20px; }
+      header h1 { font-size: 1.7rem; }
+      .contact-card { flex-direction: column; gap: 12px; }
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 16px 0; }
+    th { background: #f0f3f9; color: #444; font-weight: 600; text-align: left; padding: 10px 14px; border: 1px solid #e4e8f0; }
+    td { padding: 9px 14px; border: 1px solid #e4e8f0; vertical-align: top; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="studio">Papa Games Studio</div>
+  <h1>Meadowmark</h1>
+  <div class="subtitle">A farming game with raids, revenge and villages</div>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h3>On this page</h3>
+    <ol>
+      <li><a href="#game">About the Game</a></li>
+      <li><a href="#pgid">PapaGames ID &amp; Login Emails</a></li>
+      <li><a href="#privacy">Privacy: What Meadowmark Stores</a></li>
+      <li><a href="#delete">Deleting Your Farm or PapaGames ID</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <section id="game">
+    <h2><span class="icon">🌾</span> 1. About the Game</h2>
+    <p>Meadowmark is a mobile farming game by Papa Games Studio. You grow crops and build up a homestead, raid other players' farms, take revenge on those who raided yours, add friends and join a village.</p>
+    <p>You can play straight away as a guest. Your farm is saved on our game server so that it is still there the next time you open the game.</p>
+  </section>
+
+  <section id="pgid">
+    <h2><span class="icon">✉️</span> 2. PapaGames ID &amp; Login Emails</h2>
+    <p>A <strong>PapaGames ID</strong> is an optional account that lets you keep your farm when you change or lose your device. It is an email address and nothing else: there is no password.</p>
+    <p>When you type your email address into the game to create or log in to a PapaGames ID, we send a <strong>6-digit login code</strong> to that address. The code works for 10 minutes. The email comes from <strong>no-reply@papagamesstudio.com</strong> with the subject "<em>123456 is your PapaGames ID code</em>".</p>
+    <ul>
+      <li>We send this email only when someone asks for a code in the game with that address.</li>
+      <li>We send no newsletters, promotions or any other marketing email.</li>
+      <li>If you received a code you did not ask for, someone typed your address by mistake. You can ignore the email; without the code nothing happens.</li>
+    </ul>
+  </section>
+
+  <section id="privacy">
+    <h2><span class="icon">📋</span> 3. Privacy: What Meadowmark Stores</h2>
+    <p>This section covers Meadowmark and applies to it in place of the general statements about email addresses and accounts in our <a href="/privacy-policy.html">studio privacy policy</a>.</p>
+    <table>
+      <tr><th>What</th><th>Why</th></tr>
+      <tr><td>Your farm and gameplay: buildings, crops, raids, battles, friends, village, the farm name you chose</td><td>To run the game and keep your progress</td></tr>
+      <tr><td>A random sign-in token for each device (stored hashed) and the device model</td><td>To let that device open your farm</td></tr>
+      <tr><td>Your email address, only if you create a PapaGames ID</td><td>To send login codes and recognise your account</td></tr>
+      <tr><td>IP addresses of login and login-code requests</td><td>To limit abuse and protect accounts</td></tr>
+    </table>
+    <p>We do not sell this information, and we do not use your email address for anything other than PapaGames ID login codes.</p>
+  </section>
+
+  <section id="delete">
+    <h2><span class="icon">🗑️</span> 4. Deleting Your Farm or PapaGames ID</h2>
+    <p>You can delete your farm from inside the game. A deleted farm, or a deleted PapaGames ID, can be restored by support for <strong>30 days</strong>; after that it is erased from our server.</p>
+    <p>You can also ask us to delete your farm, your PapaGames ID or both by writing to <a href="mailto:papagamesstudio@gmail.com">papagamesstudio@gmail.com</a> from the email address of your PapaGames ID, or with your farm's player tag. We will respond within 30 days.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="icon">💬</span> 5. Contact Us</h2>
+    <p>
+      <strong>Papa Games Studio</strong><br>
+      Email: <a href="mailto:papagamesstudio@gmail.com">papagamesstudio@gmail.com</a>
+    </p>
+    <p>We aim to respond to all inquiries within <strong>1–3 business days</strong>.</p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2026 Papa Games Studio
+</footer>
+
+</body>
+</html>
